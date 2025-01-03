@@ -1,0 +1,8 @@
+on: workflow_dispatch
+jobs:
+  test-semver:
+    name: test-semver
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check semver
+        uses: obi1kenobi/cargo-semver-checks-action@v2  
